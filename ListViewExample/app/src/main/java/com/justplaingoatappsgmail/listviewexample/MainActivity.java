@@ -30,22 +30,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addAllGameListings() {
-        GameListing counterStrike = new GameListing(R.drawable.right_arrow, 14.99,
-                "First-Person Shooter", "Counter-Strike: Global Offensive");
-        GameListing skyrim = new GameListing(R.drawable.right_arrow, 59.99,
+        GameListing counterStrike = new GameListing(R.drawable.csgo, 14.99,
+                "FPS", "Counter-Strike: Global Offensive");
+        GameListing skyrim = new GameListing(R.drawable.skyrim, 59.99,
                 "Adventure", "The Elder Scrolls V: Skyrim");
-        GameListing rocketLeague = new GameListing(R.drawable.right_arrow, 19.99,
+        GameListing rocketLeague = new GameListing(R.drawable.rocketleague, 19.99,
                 "Sports", "Rocket League");
-        GameListing portal = new GameListing(R.drawable.right_arrow, 19.99,
+        GameListing portal = new GameListing(R.drawable.portal2, 19.99,
                 "Puzzle", "Portal 2");
-        GameListing left4Dead = new GameListing(R.drawable.right_arrow, 49.99,
+        GameListing left4Dead = new GameListing(R.drawable.l4d, 19.99,
                 "Action", "Left 4 Dead 2");
+        GameListing rust = new GameListing(R.drawable.rust, 19.99,
+                "Survival", "Rust");
+        GameListing crew = new GameListing(R.drawable.crew, 49.99,
+                "Racing", "The Crew");
+        GameListing garrysMod = new GameListing(R.drawable.garrysmod, 9.99,
+                "Sandbox", "Garry's Mod");
 
         gameListings.add(counterStrike);
         gameListings.add(skyrim);
         gameListings.add(rocketLeague);
         gameListings.add(portal);
         gameListings.add(left4Dead);
+        gameListings.add(rust);
+        gameListings.add(crew);
+        gameListings.add(garrysMod);
     }
 
     private class MyArrayAdapter extends ArrayAdapter<GameListing> {

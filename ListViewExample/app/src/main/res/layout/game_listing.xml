@@ -8,10 +8,9 @@
         android:layout_height="wrap_content"
         android:text="Genre"
         android:id="@+id/gameGenreTextView"
-        android:textSize="25dp"
-        android:layout_alignBottom="@+id/arrow"
-        android:layout_toLeftOf="@+id/titleTextView"
-        android:layout_toStartOf="@+id/titleTextView" />
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/gameImage"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,12 +18,10 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Price"
         android:id="@+id/priceTextView"
-        android:textSize="25dp"
-        android:layout_alignTop="@+id/gameGenreTextView"
-        android:layout_toLeftOf="@+id/arrow"
-        android:layout_toStartOf="@+id/arrow"
-        android:layout_marginRight="33dp"
-        android:layout_marginEnd="33dp" />
+        android:textSize="20dp"
+        android:layout_below="@+id/gameImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -32,9 +29,10 @@
         android:id="@+id/arrow"
         android:background="@null"
         android:src="@drawable/right_arrow"
-        android:layout_below="@+id/titleTextView"
+        android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/gameGenreTextView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,18 +40,17 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Title"
         android:id="@+id/titleTextView"
+        android:textSize="20dp"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/priceTextView"
-        android:layout_toStartOf="@+id/priceTextView"
-        android:layout_marginRight="62dp"
-        android:layout_marginEnd="62dp" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:id="@+id/gameImage"
-        android:src="@drawable/right_arrow"
-        android:layout_alignBottom="@+id/gameGenreTextView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/titleTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
 </RelativeLayout>
